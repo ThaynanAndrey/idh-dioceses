@@ -170,7 +170,7 @@ export function IdhmBarChart({
               <LabelList
                 dataKey="idhmMedio"
                 position="right"
-                formatter={(v: number) => v.toFixed(3).replace(".", ",")}
+                formatter={(v) => Number(v).toFixed(3).replace(".", ",")}
                 style={{
                   fill: "var(--text-secondary)",
                   fontSize: 11,
@@ -223,7 +223,7 @@ export function IdhmBarChart({
             <LabelList
               dataKey="idhmMedio"
               position="top"
-              formatter={(v: number) => v.toFixed(3).replace(".", ",")}
+              formatter={(v) => Number(v).toFixed(3).replace(".", ",")}
               style={{
                 fill: "var(--text-secondary)",
                 fontSize: 10,
